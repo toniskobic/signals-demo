@@ -1,0 +1,8 @@
+<div class="users shadow">
+  <h3>Filtered users by: {{ filter }}</h3>
+  <ul>
+    <li class="users__user" *ngFor="let user of filteredUsers()">
+      {{user.firstname}} {{user.lastname}}
+    </li>
+  </ul>
+</div>

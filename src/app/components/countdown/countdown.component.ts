@@ -35,6 +35,7 @@ export class CountdownComponent {
       } else {
         this.tryClearInterval();
         this.endDate = null;
+        this.timer.set({ minutes: 5, seconds: 0 });
       }
     }
   }

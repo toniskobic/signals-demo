@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-inline-start: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 50px;
+  padding-inline: 20px;
+}
+
+.demos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &--center {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .demos {
+    flex-direction: row;
+  }
+}
