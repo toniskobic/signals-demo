@@ -15,6 +15,6 @@ export class UsersComponent {
   users = this.heroService.users;
 
   addUser() {
-    this.users.mutate((users) => users.push({ firstname: 'John', lastname: 'Johnson' }));
+    this.users.mutate((users) => users.push({ firstname: 'Mark', lastname: 'Markich' }));
   }
 }

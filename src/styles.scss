@@ -90,10 +90,55 @@ h3 {
   font-size: 1.8rem;
 }
 
+h4 {
+  font-size: 1.6rem;
+}
+
 button {
   padding: 8px;
   background: rgb(57, 57, 57);
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.demos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &__demo {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    & label {
+      margin-inline-end: 5px;
+    }
+
+
+    & .demo__input {
+      margin-block-end: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .demos {
+    flex-direction: row;
+  }
 }
 
 .shadow {

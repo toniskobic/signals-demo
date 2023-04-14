@@ -1,0 +1,8 @@
+<div class="demos__demo container container--column shadow">
+  <h4>Grandchild</h4>
+  <div>
+    <label for="demo-input">Data:</label>
+    <input #input id="demo-input" class="demo__input" type="text" [value]="data()">
+  </div>
+  <button (click)="setValue(input.value)">Change passed data</button>
+</div>
