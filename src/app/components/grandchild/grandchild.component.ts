@@ -11,6 +11,7 @@ export class GrandchildComponent {
   @Input() data!: WritableSignal<string>;
 
   setValue(input: string){
+    console.log('setValue called');
     this.data.set(input);
   }
 }

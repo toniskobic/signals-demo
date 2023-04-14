@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, effect } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
 
 @Component({
@@ -12,4 +12,5 @@ export class ParentComponent {
 
   data = signal('initial value');
 
+  effect = effect(() => console.log('Value changed to:', this.data()));
 }
