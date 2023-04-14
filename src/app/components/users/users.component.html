@@ -1,9 +1,9 @@
 <div class="demos__demo shadow">
   <h3>Users</h3>
+  <button (click)="addUser()">Add user</button>
   <ul>
     <li class="user" *ngFor="let user of users()">
       {{user.firstname}} {{user.lastname}}
     </li>
   </ul>
-  <button (click)="addUser()">Add user</button>
 </div>
