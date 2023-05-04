@@ -1,6 +1,6 @@
 # Signals Demo
 
-Angular 16@next demo application showcasing the use of Angular signals, Angular's reactive primitive.
+Angular 16 demo application showcasing the use of Angular signals, Angular's reactive primitive.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
