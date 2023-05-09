@@ -110,7 +110,7 @@ button {
 
 .demos {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   gap: 20px;
 
   &--center {
@@ -136,7 +136,7 @@ button {
 
 @media (min-width: 768px) {
   .demos {
-    flex-direction: row;
+    flex-flow: row wrap;
   }
 }
 
