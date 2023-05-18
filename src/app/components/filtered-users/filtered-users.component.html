@@ -1,11 +1,17 @@
 <div class="demos__demo shadow">
   <div>
     <label for="demo-input">Filter:</label>
-    <input #input id="demo-input" class="demo__input" type="text" [value]="filter()">
+    <input
+      #input
+      id="demo-input"
+      class="demo__input"
+      type="text"
+      [value]="filter()"
+    />
   </div>
   <ul>
     <li class="user" *ngFor="let user of filteredUsers()">
-      {{user.firstname}} {{user.lastname}}
+      {{ user.firstname }} {{ user.lastname }}
     </li>
   </ul>
 </div>

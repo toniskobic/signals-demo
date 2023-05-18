@@ -3,8 +3,16 @@
   <form class="form">
     <div>
       <label class="form__label" for="data">Data:</label>
-      <input #input id="data" class="form__input" type="text" [value]="data()">
+      <input
+        #input
+        id="data"
+        class="form__input"
+        type="text"
+        [value]="data()"
+      />
     </div>
-    <button class="form__submit" (click)="setValue(input.value)">Change passed data</button>
+    <button class="form__submit" (click)="setValue(input.value)">
+      Change passed data
+    </button>
   </form>
 </div>

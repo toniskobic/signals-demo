@@ -6,10 +6,8 @@ import { GrandchildComponent } from '../grandchild/grandchild.component';
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss'],
   standalone: true,
-  imports: [GrandchildComponent]
+  imports: [GrandchildComponent],
 })
 export class ChildComponent {
-
   @Input() data!: WritableSignal<string>;
-
 }

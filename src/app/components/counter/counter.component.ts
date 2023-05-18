@@ -7,10 +7,9 @@ import { Component, signal } from '@angular/core';
   standalone: true,
 })
 export class CounterComponent {
-
   counter = signal(0);
 
   increment() {
-    this.counter.update(counter => counter + 1);
+    this.counter.update((counter) => counter + 1);
   }
 }

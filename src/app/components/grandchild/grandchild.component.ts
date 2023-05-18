@@ -6,10 +6,9 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './grandchild.component.html',
   styleUrls: ['./grandchild.component.scss'],
   standalone: true,
-  imports: [FormsModule]
+  imports: [FormsModule],
 })
 export class GrandchildComponent {
-
   @Input() data!: WritableSignal<string>;
 
   setValue(input: string) {
